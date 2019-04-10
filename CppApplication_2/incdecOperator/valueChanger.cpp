@@ -31,4 +31,3 @@ void valueChanger::decrease(int* nums, int* weights){
         if(nums[i]==1) weights[i]--;
     }
 }
-

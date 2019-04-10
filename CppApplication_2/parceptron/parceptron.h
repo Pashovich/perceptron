@@ -16,7 +16,7 @@
 
 class parceptron {
 public:
-    parceptron(const char s);
+    parceptron(const char* s);
     parceptron(const parceptron& orig);
     virtual ~parceptron();
     void setWeights();
@@ -25,7 +25,7 @@ private:
     int* nums_;
     int* constNums;
     void learn();
-    void test();
+    void test(char * testName);
     const int K = 7;
 
 };

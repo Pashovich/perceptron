@@ -19,21 +19,24 @@
 #include <iostream>
 using namespace std;
 
-parceptron::parceptron(const char s) {
+parceptron::parceptron(const char* s) {
     constNums = new int [15];
     weights_ = new int[15];
-    if (s == 'l'){
+    if (s[1] == 'l'){
         setWeights();
         learn();
     }
-    else{
-        test();
+    if (s[1] == 't'){
+       char *test1  = "right.txt";
+       test(test1); 
+       char* test2 = "wrong.txt";
+       test(test2);
     }
 }
-void parceptron::test(){
+void parceptron::test(char * testName){
     fileOperator file;
     learnAI test(K);
-    file.readFrom("const.txt",constNums);
+    file.readFrom(testName,constNums);
     file.readFrom("weights.txt",weights_);
     if (test.learnIter(constNums,weights_)) {
         std::cout << "ok" << std::endl;
@@ -58,15 +61,16 @@ void parceptron::learn(){
     file.readFrom("const.txt",constNums);
     nums_ = new int[15];
     learnAI iter(K);
-    for(int i = 0 ; i< 10000000;i++){
+    for(int i = 0 ; i< 10000;i++){
         if((i%5) == 0){
             if(!iter.learnIter(constNums,weights_)){
-                change.increase(constNums,weights_);
+                valueChanger::increase(constNums,weights_);
+                
             }
         }
         else{
             random.randomFunc(nums_);
-            if(iter.learnIter(nums_,weights_)) change.decrease(nums_,weights_);
+            if(iter.learnIter(nums_,weights_)) valueChanger::decrease(nums_,weights_);
         }
     }
     file.writeTo("weights.txt",weights_);

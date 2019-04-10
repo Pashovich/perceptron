@@ -36,6 +36,8 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
     <itemPath>file/const.txt</itemPath>
+    <itemPath>right.txt</itemPath>
+    <itemPath>file/weights.txt</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -52,6 +54,8 @@
       <item path="file/fileOperator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="file/fileOperator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="file/weights.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="incdecOperator/valueChanger.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -70,6 +74,8 @@
       <item path="randomizer/randomizer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="randomizer/randomizer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="right.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -98,6 +104,8 @@
       </item>
       <item path="file/fileOperator.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="file/weights.txt" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="incdecOperator/valueChanger.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="incdecOperator/valueChanger.h" ex="false" tool="3" flavor2="0">
@@ -115,6 +123,8 @@
       <item path="randomizer/randomizer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="randomizer/randomizer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="right.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

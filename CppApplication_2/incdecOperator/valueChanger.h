@@ -19,8 +19,8 @@ public:
     valueChanger();
     valueChanger(const valueChanger& orig);
     virtual ~valueChanger();
-    void increase(int* nums,int* weights);
-    void decrease (int* nums,int* weights);
+    void static increase(int* nums,int* weights);
+    void static decrease (int* nums,int* weights);
 private:
 
 };

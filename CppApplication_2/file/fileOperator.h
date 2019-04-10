@@ -19,8 +19,8 @@ public:
     fileOperator();
     fileOperator(const fileOperator& orig);
     virtual ~fileOperator();
-    void readFrom(const char * s,int* temp);
-    void writeTo(const char * s, int* temp);
+    void readFrom(char * s,int* temp);
+    void writeTo(char * s, int* temp);
 private:
 
 };

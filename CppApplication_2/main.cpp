@@ -12,6 +12,7 @@
  */
 
 #include <cstdlib>
+#include <iostream>
 #include "../CppApplication_2/parceptron/parceptron.h"
 
 using namespace std;
@@ -20,7 +21,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    parceptron test('p');
+    parceptron test(argv[1]);
     return 0;
 }
 

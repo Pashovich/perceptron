@@ -13,6 +13,8 @@
 
 #include "fileOperator.h"
 #include <fstream>
+#include <string>
+#include <iostream>
 using namespace std;
 
 fileOperator::fileOperator() {
@@ -23,19 +25,24 @@ fileOperator::fileOperator(const fileOperator& orig) {
 
 fileOperator::~fileOperator() {
 }
-void fileOperator::readFrom(const char* s,int * temp){
+void fileOperator::readFrom(char* s,int * temp){
     ifstream in;
-    in.open(s,ios::in);
+    string filename = "file/";
+    filename+=s;
+    in.open(filename,ios::in);
     if(in.is_open()){
         for(int i = 0 ; i < 15; i++){
-            in >> temp[i]; 
+            in >> temp[i];
         }
         in.close();
     }
 }
-void fileOperator::writeTo(const char* s, int* temp){
+void fileOperator::writeTo(char* s, int* temp){
     ofstream out;
-    out.open(s,ios::out);
+    string filename;
+    filename = "file/";
+    filename += s;
+    out.open(filename,ios::out);
     if (out.is_open()){
         for(int i = 0 ;i<15;i++){
             out << temp[i] << " ";
