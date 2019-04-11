@@ -20,8 +20,8 @@
 using namespace std;
 
 parceptron::parceptron(const char* s) {
-    constNums = new int [15];
-    weights_ = new int[15];
+    this->constNums = new int [15];
+    this->weights = new int[15];
     if (s[1] == 'l'){
         setWeights();
         learn();
@@ -34,18 +34,18 @@ parceptron::parceptron(const char* s) {
     }
 }
 void parceptron::test(char * testName){
-    fileOperator file;
+    fileOperator* file = fileOperator::getInitialization();
     learnAI test(K);
-    file.readFrom(testName,constNums);
-    file.readFrom("weights.txt",weights_);
-    if (test.learnIter(constNums,weights_)) {
+    file->readFrom(testName,constNums);
+    file->readFrom("weights.txt",weights);
+    if (test.learnIter(constNums,weights)) {
         std::cout << "ok" << std::endl;
     }
     else std::cout << "no"<<std::endl;
 }
 void parceptron::setWeights(){
     for(int i = 0; i < 15; i++){
-        weights_[i] = 1;
+        this->weights[i] = 1;
     }
 }
 
@@ -56,23 +56,23 @@ parceptron::~parceptron() {
 }
 void parceptron::learn(){
     valueChanger change;
-    fileOperator file;
+    fileOperator * file = fileOperator::getInitialization();
     randomizer random;
-    file.readFrom("const.txt",constNums);
-    nums_ = new int[15];
+    file->readFrom("const.txt",constNums);
+    nums = new int[15];
     learnAI iter(K);
-    for(int i = 0 ; i< 10000;i++){
-        if((i%5) == 0){
-            if(!iter.learnIter(constNums,weights_)){
-                valueChanger::increase(constNums,weights_);
+    for(int i = 0 ; i< 1000000;i++){
+        if((i%10) == 0){
+            if(!iter.learnIter(constNums,this->weights)){
+                valueChanger::increase(constNums,this->weights);
                 
             }
         }
         else{
-            random.randomFunc(nums_);
-            if(iter.learnIter(nums_,weights_)) valueChanger::decrease(nums_,weights_);
+            random.randomFunc(nums);
+            if(iter.learnIter(nums,this->weights)) valueChanger::decrease(nums,this->weights);
         }
     }
-    file.writeTo("weights.txt",weights_);
+    file->writeTo("weights.txt",this->weights);
 }
 

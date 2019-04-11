@@ -21,8 +21,8 @@ public:
     virtual ~parceptron();
     void setWeights();
 private:
-    int* weights_;
-    int* nums_;
+    int* weights;
+    int* nums;
     int* constNums;
     void learn();
     void test(char * testName);

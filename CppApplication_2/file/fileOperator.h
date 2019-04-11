@@ -16,13 +16,14 @@
 
 class fileOperator {
 public:
-    fileOperator();
-    fileOperator(const fileOperator& orig);
+    static fileOperator* getInitialization();
     virtual ~fileOperator();
     void readFrom(char * s,int* temp);
     void writeTo(char * s, int* temp);
 private:
-
+    fileOperator();
+    fileOperator(const fileOperator& orig);
+    static fileOperator *initialization;
 };
 
 #endif /* FILEOPERATOR_H */

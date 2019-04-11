@@ -22,6 +22,14 @@ CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/cppapplication_2
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
 CND_PACKAGE_NAME_Release=cppapplication2.tar
 CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/cppapplication2.tar
+# Test_ configuration
+CND_PLATFORM_Test_=GNU-Linux
+CND_ARTIFACT_DIR_Test_=dist/Test_/GNU-Linux
+CND_ARTIFACT_NAME_Test_=cppapplication_2
+CND_ARTIFACT_PATH_Test_=dist/Test_/GNU-Linux/cppapplication_2
+CND_PACKAGE_DIR_Test_=dist/Test_/GNU-Linux/package
+CND_PACKAGE_NAME_Test_=cppapplication2.tar
+CND_PACKAGE_PATH_Test_=dist/Test_/GNU-Linux/package/cppapplication2.tar
 #
 # include compiler specific variables
 #

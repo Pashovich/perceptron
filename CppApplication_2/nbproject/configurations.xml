@@ -127,5 +127,42 @@
       <item path="right.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
+    <conf name="Test_" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="file/const.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="file/fileOperator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="file/fileOperator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="file/weights.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="incdecOperator/valueChanger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="incdecOperator/valueChanger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="learnIt/learnAI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="learnIt/learnAI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="parceptron/parceptron.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="parceptron/parceptron.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="randomizer/randomizer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="randomizer/randomizer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="right.txt" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
   </confs>
 </configurationDescriptor>

@@ -50,4 +50,11 @@ void fileOperator::writeTo(char* s, int* temp){
         out.close();
     }
 }
+fileOperator* fileOperator::initialization = 0;
+fileOperator* fileOperator::getInitialization(){
+    if (initialization==0){
+        initialization = new fileOperator();
+    }
+    return initialization;
+}
 

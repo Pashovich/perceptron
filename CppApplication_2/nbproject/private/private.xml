@@ -2,14 +2,22 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
         <activeConfTypeElem>1</activeConfTypeElem>
-        <activeConfIndexElem>0</activeConfIndexElem>
+        <activeConfIndexElem>2</activeConfIndexElem>
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/randomizer/randomizer.cpp</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/file/weights.txt</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/file/const.txt</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/file/wrong.txt</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/incdecOperator/valueChanger.h</file>
             <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/file/fileOperator.cpp</file>
             <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/parceptron/parceptron.h</file>
             <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/learnIt/learnAI.cpp</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/file/right.txt</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/incdecOperator/valueChanger.cpp</file>
+            <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/randomizer/randomizer.h</file>
             <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/learnIt/learnAI.h</file>
             <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/main.cpp</file>
             <file>file:/home/pashovich/NetBeansProjects/CppApplication_2/file/fileOperator.h</file>
